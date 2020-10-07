@@ -1,0 +1,220 @@
+@import '../../static/css/fonts.css';
+
+@highlight: #f9c120;
+@highlight2: #e1585c;
+@black: #221f1f;
+
+.LoginComponent_Wrapper {
+  width: 100%;
+  max-height: 100vh;
+  height: 100vh;
+  background: #e8e0ce;
+
+  .title {
+    font-family: Square;
+    font-size: 36px;
+    line-height: 38px;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0px;
+    color: @black;
+    .highLight {
+      color: @highlight;
+    }
+    .highLight2 {
+      color: @highlight2;
+    }
+  }
+
+  .LoginComponent_Content {
+    box-sizing: border-box;
+    max-width: 350px;
+    margin: auto;
+    :global {
+      .mt-12 {
+        margin-top: 43px;
+      }
+      .mt-8 {
+        margin-top: 10px !important;
+      }
+      .ant-input-prefix {
+        margin-right: 9px;
+      }
+      .ant-form-item {
+        margin-bottom: 30px;
+      }
+      
+    }
+  }
+}
+
+//login form
+.LoginForm_Wrapper {
+  width: 100%;
+  .customFormItem, .password_feild {
+    :global {
+      .ant-input-affix-wrapper {
+        font-family: AR;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        background-color: transparent;
+        border-color: gray;
+        box-shadow: none;
+        padding: 4px 0px;
+        font-size: 16px;
+        &:hover {
+          border-color: red;
+        }
+        &:focus {
+          border-color: red;
+        }
+        &::selection {
+          border-color: red;
+        }
+      }
+      .ant-input {
+        background-color: transparent;
+        font-size: 16px;
+        &::placeholder {
+          color: rgba(34, 31, 31, 0.85);
+        }
+      }
+    }
+  }
+  .password_feild {
+    margin-bottom: 20px !important;
+  }
+  .checkbox_feild {
+    margin-bottom: 23px !important;
+  }
+  .login_button {
+    margin-bottom: 33px !important;
+  }
+  .customButton_Icn {
+    position: absolute;
+    left: 17px;
+  }
+  .customButton_Login {
+    width: 100%;
+    padding: 27px 174px;
+    background: #221f1f;
+    box-shadow: 0px 8px 16px rgba(225, 88, 92, 0.08);
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      font-family: AR;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 18px;
+      color: #ffffff;
+    }
+  }
+  .customButton_LoginGoogle {
+    width: 100%;
+    padding: 27px 24px;
+    background: #ffffff;
+    box-shadow: 0px 8px 16px rgba(225, 88, 92, 0.08);
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 18px;
+      color: #221f1f;
+    }
+  }
+  .customButton_LoginFacebook {
+    width: 100%;
+    padding: 27px 24px;
+    background: #3b569a;
+    box-shadow: 0px 8px 16px rgba(225, 88, 92, 0.08);
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 18px;
+      letter-spacing: 0.2px;
+
+      /* White */
+
+      color: #ffffff;
+    }
+  }
+  .customButton_LoginQuote {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    p {
+      font-family: AR;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      height: 15px;
+      letter-spacing: 0.1px;
+      color: #221f1f;
+      span {
+        color: red;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.customCheckBox {
+  :global {
+    .ant-checkbox-input {
+      width: 20px !important;
+      height: 20px !important;
+      border-radius: 4px !important;
+      &:hover {
+        border: none !important;
+      }
+    }
+    .ant-checkbox-inner {
+      width: 20px !important;
+      height: 20px !important;
+      border-radius: 4px !important;
+      &:hover {
+        border: none !important;
+      }
+      &::after {
+        transform: rotate(45deg) scale(1) translate(-26%, -65%);
+      }
+    }
+    .ant-checkbox-checked .ant-checkbox-inner {
+      background-color: red;
+      border-color: red;
+    }
+  }
+}
+
+.customSuffixPassword {
+  font-family: AR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  cursor: pointer;
+  color: #e1585c;
+}
